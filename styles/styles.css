@@ -1,0 +1,828 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	margin: 0;
+	font-family: 'Dosis', Arial, sans-serif;
+}
+h1, h2, h3, h4 {
+	font-weight: 300;
+}
+h1 {
+	/*font-size: 3.63rem;*/
+	font-size: 3.412rem;
+}
+h2 {
+	/*font-size: 2.31rem;*/
+	font-size: 2.511rem;
+}
+h3 {
+	/*font-size: 1.5rem;*/
+	font-size: 1.847rem;
+}
+h4 {
+	/*font-size: 1.05rem;*/
+	font-size: 1.359rem;
+}
+h5 {
+	font-size: 1.166rem;
+}
+a {
+	color: #222;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img:hover {
+	-webkit-transform: scale(.925);
+	-moz-transform: scale(.925);
+	transform: scale(.925);
+}
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+/* HEADER FULL SIZE */
+header.full, header.small {
+	overflow: auto;
+	border-bottom: 1px solid #aaa;
+	position: fixed;
+	width: 1140px;
+	background: white;
+	top: 0;
+	z-index: 10;
+}
+header.full {
+	height: 110px;
+	padding: 0 0 24px;
+}
+header .name-title {
+	float: left;
+}
+header .contact-info {
+	float: right;
+	text-align: right;
+}
+header h1 {
+	margin: 10px 0 0;
+	text-transform: uppercase;
+}
+header h2 {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+header h3 {
+	margin: 20px 0 0;
+}
+/* HEADER SMALL */
+header.small {
+	height: 60px;
+}
+header.small h1 {
+	margin: 4px 0 0;
+	font-size: 1.359rem;
+}
+header.small h2 {
+	font-size: .9rem;
+}
+header.small h3 {
+	font-size: 1.166rem;
+	margin-top: 4px;
+	line-height: 1;
+}
+header.small h5 {
+	font-size: .9rem;
+	line-height: 1;
+}
+header, header h1, header h2, header h3, header h5 {
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s; 
+}
+
+/* FOOTER */
+footer {
+	margin: 60px 0 0;
+	border-top: 1px solid #aaa;
+	clear: both;
+	padding: 30px 0 40px;
+}
+footer .left {
+	float: left;
+}
+footer .right {
+	float: right;
+	margin-top: -5px;
+}
+footer a img:hover {
+	-webkit-transform: scale(.9);
+	-moz-transform: scale(.9);
+	transform: scale(.9);
+	border-bottom: none;
+}
+
+/* TIMELINE HEADINGS */
+.timeline-headings {
+	padding-top: 160px;
+}
+.timeline-headings h2, .timeline-headings h3 {
+	text-transform: uppercase;
+}
+.timeline-headings h2 {
+	margin-top: .35em;
+}
+.timeline-headings .description, .timeline-headings .company, .timeline-headings .present, .timeline-headings .projects, .timeline-headings .skills {
+	height: 60px;
+}
+.timeline.present {
+	background: url(../images/timeline-BG/timeline-BG-top-arrow.jpg) center bottom no-repeat;
+}
+.timeline.present h4 {
+	text-transform: uppercase;
+}
+
+/* MAIN COLUMNS */
+.description {
+	width: 330px;
+	float: left;
+	position: relative;
+}
+.company {
+	width: 165px;
+	float: left;
+	text-align: center;
+}
+.timeline {
+	width: 150px;
+	float: left;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.projects {
+	width: 345px;
+	float: left;
+	padding: 0 20px;
+}
+.projects img {
+	float: left;
+	margin: 0 20px 0 0;
+	border-radius: 6px;
+}
+.project-row {
+	margin: 0 0 1.359em 0;
+	overflow: auto;
+}
+.skills {
+	width: 110px;
+	float: left;
+	text-align: right;
+}
+.skills ul {
+	list-style: none;
+}
+
+/* JOBS AND DESCRIPTIONS */
+.jobs-2009-present, .jobs-2000-2008 {
+	float: left;
+	width: 645px;
+}
+h3.company-title, h4.job-title {
+	cursor: pointer;
+}
+h3.company-title:hover, h4.job-title:hover  {
+	text-decoration: underline;
+	cursor: pointer;
+}
+span.company-descr {
+	visibility: hidden;
+	margin: -2.6em 0 0;
+	font-size: 1rem;
+	position: absolute;
+	left: 0;
+	font-style: italic;
+}
+ul.job-descr {
+	padding: 10px 0 0 20px;
+	visibility: hidden;
+}
+.sustnrs div {
+	height: 448px;
+}
+.sustnrs .timeline {
+	background:url(../images/timeline-BG/timeline-BG-2013-2014.jpg) center top no-repeat;
+}
+.sustnrs .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.sustnrs .timeline h4.first {
+	margin-top: 120px;
+}
+.sustnrs .description h3, .sustnrs .company img {
+	margin-top: 370px;
+}
+.cts div {
+	height: 352px;
+}
+.cts .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2011-2012.jpg) center top no-repeat;
+}
+.cts .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.cts .timeline h4.first {
+	margin-top: 90px;
+}
+.cts .description h3, .cts .company img {
+	margin-top: 255px;
+}
+.helixriver div {
+	height: 460px;
+}
+.helixriver .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2009-2010.jpg) center top no-repeat;
+}
+.helixriver .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.helixriver .timeline h4.first {
+	margin: 160px 0 0 125px;
+}
+.helixriver .description h3, .helixriver .company img {
+	margin-top: 360px;
+}
+.martorell div {
+	height: 368px;
+}
+.martorell .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2007-2008.jpg) center top no-repeat;
+}
+.martorell .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.martorell .timeline h4.first {
+	margin-top: 110px;
+}
+.martorell .timeline h4.year-2007 {
+	margin-left: 145px;
+}
+.martorell .description h3, .martorell .company img {
+	margin-top: 230px;
+}
+.costa div {
+	height: 225px;
+}
+.costa .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2006.jpg) center top no-repeat;
+}
+.costa .timeline h4 {
+	margin: 160px 0 0 148px;
+}
+.costa .description h3, .costa .company img {
+	margin-top: 130px;
+}
+.u2i div {
+	height: 272px;
+}
+.u2i .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2005.jpg) center top no-repeat;
+}
+.u2i .timeline h4 {
+	margin: 150px 0 0 85px;
+}
+.u2i .description h3, .u2i .company img {
+	margin-top: 200px;
+}
+.thefarcorner div {
+	height: 463px;
+}
+.thefarcorner .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2002-2004.jpg) center top no-repeat;
+}
+.thefarcorner .timeline h4 {
+	margin: 160px 0 0 85px;
+}
+.thefarcorner .timeline h4.first {
+	margin-top: 60px;
+}
+.thefarcorner .description h3, .thefarcorner .company img {
+	margin-top: 370px;
+}
+.argonauts div {
+	height: 454px;
+}
+.argonauts .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2000-2001.jpg) center top no-repeat;
+}
+.argonauts .timeline h4 {
+	margin: 160px 0 0 85px;
+}
+.argonauts .description h3, .argonauts .company img {
+	margin-top: 110px;
+}
+/* EVENTS AND LOCATIONS */
+.event {
+	position: absolute;
+	right: 56px;
+}
+.location {
+	position: absolute;
+	right: 12px;
+}
+.climate-reality {
+	top: 185px;
+}
+.marathon {
+	top: 365px;
+}
+.triathlon {
+	top: 165px;
+}
+.chicago {
+	top: 50px;
+}
+.marriage {
+	top: 305px;
+}
+.barcelona {
+	top: 235px;
+}
+.natalie {
+	top: 60px;
+}
+.mediterranean {
+	top: 98px;
+}
+.spain {
+	top: 8px;
+}
+.newyork {
+	top: 200px;
+}
+
+/* PROJECTS */
+.projects-2010-2014 .timeline-headings {
+	margin: 0 0 36px 0;
+	overflow: hidden;
+}
+.projects-2008-2009 {
+	margin-top: 110px;
+}
+.projects-2006-2007 {
+	margin-top: 350px;
+}
+.projects-2004 {
+	margin-top: 340px;
+}
+.projects-2001-2004 {
+	margin-top: 320px;
+}
+
+/* EDUCATION */
+.education, .certification, .aptitudes {
+	margin: 1.5em 0 3em 0;
+	float: left;
+	width: 35%;
+}
+.aptitudes {
+	width: 30%;
+}
+.education h2, .certification h2, .aptitudes h2 {
+	margin-bottom: 0.4em;
+	text-transform: uppercase;
+}
+.education h4, .certification h4 {
+	font-size: 1.166rem;
+}
+.aptitudes h4 {
+	margin-bottom: 6px;
+}
+.education .description, .certification .description, .aptitudes .description {
+	margin: 0 0 1em 0;
+	float: none;
+}
+.aptitude-bars div, .aptitude-bars-2 div {
+	width: 100%;
+	border-radius: 20px;
+	height: 22px;
+	background: #efefef;
+	margin: 0 0 4px 0;
+}
+.aptitude-bars div span, .aptitude-bars-2 div span {
+	opacity: 0;
+	height: 100%;
+	border-radius: 20px;
+	color: white;
+	padding: 0 0 0 10px;
+	display: block;
+}
+.aptitude-bars div:nth-child(even) span, .aptitude-bars-2 div:nth-child(odd) span {
+	background: #066435;
+}
+.aptitude-bars div:nth-child(odd) span, .aptitude-bars-2 div:nth-child(even) span {
+	background: #006271;
+}
+
+
+
+/* POPUP IFRAME PAGES */
+.popups h3 {
+	margin-bottom: .5em;
+}
+.popups ul {
+	padding: 0 0 0 1.5em;
+	clear: left;
+}
+.popups p {
+	margin: 1em 0;
+}
+a.fancybox-iframe {
+	width: 1px;
+	height: 0px;
+}
+
+/* GENERAL STYLES */
+.clearfloat {
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+}
+.img-L {
+	float: left;
+	margin: 0 30px 0 0;
+}
+/* ANIMATIONS */
+.show-company-descr {
+	-webkit-animation: text_ufb .25s ease-out forwards;
+	-moz-animation: text_ufb .25s ease-out forwards;
+	animation: text_ufb .25s ease-out forwards;
+}
+.show-job-descr {
+	-webkit-animation: text_dft .25s ease-out forwards;
+	-moz-animation: text_dft .25s ease-out forwards;
+	animation: text_dft .25s ease-out forwards;
+}
+.animate-apt-bars {
+	-webkit-animation: grow_bars .5s ease-out forwards;
+	-moz-animation: grow_bars .5s ease-out forwards;
+	animation: grow_bars .5s ease-out forwards;
+}
+.animate-apt-bars-2 {
+	-webkit-animation: grow_bars .5s .5s ease-out forwards;
+	-moz-animation: grow_bars .5s .5s ease-out forwards;
+	animation: grow_bars .5s .5s ease-out forwards;
+}
+
+@-webkit-keyframes text_ufb {
+	0% {
+		-webkit-transform: translateY(100px);
+		opacity: 0;		
+	}
+	60% {
+		-webkit-transform: translateY(-5px);	
+	}
+	80% {
+		-webkit-transform: translateY(2px);
+		opacity: .9;	
+	}	
+	100% {
+		-webkit-transform: translateY(0px);
+		opacity: 1;	
+		visibility: visible;
+	}
+}
+@-moz-keyframes text_ufb {
+	0% {
+		-moz-transform: translateY(100px);
+		opacity: 0;		
+	}
+	60% {
+		-moz-transform: translateY(-5px);	
+	}
+	80% {
+		-moz-transform: translateY(2px);
+		opacity: .9;	
+	}	
+	100% {
+		-moz-transform: translateY(0px);
+		opacity: 1;	
+		visibility: visible;
+	}
+}
+@keyframes text_ufb {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;		
+	}
+	60% {
+		transform: translateY(-5px);	
+	}
+	80% {
+		transform: translateY(2px);
+		opacity: .9;	
+	}	
+	100% {
+		transform: translateY(0px);
+		opacity: 1;	
+		visibility: visible;
+	}
+}
+@-webkit-keyframes text_dft {
+	0% {
+		-webkit-transform: translateY(-100px);
+		opacity: 0;		
+	}
+	60% {
+		-webkit-transform: translateY(2px);	
+	}
+	80% {
+		-webkit-transform: translateY(-5px);
+		opacity: .9;	
+	}	
+	100% {
+		-webkit-transform: translateY(0px);
+		opacity: 1;	
+		visibility: visible;
+	}
+}
+@-moz-keyframes text_dft {
+	0% {
+		-moz-transform: translateY(-100px);
+		opacity: 0;		
+	}
+	60% {
+		-moz-transform: translateY(2px);	
+	}
+	80% {
+		-moz-transform: translateY(-5px);
+		opacity: .9;	
+	}	
+	100% {
+		-moz-transform: translateY(0px);
+		opacity: 1;	
+		visibility: visible;
+	}
+}
+@keyframes text_dft {
+	0% {
+		transform: translateY(-100px);
+		opacity: 0;		
+	}
+	60% {
+		transform: translateY(2px);	
+	}
+	80% {
+		transform: translateY(-5px);
+		opacity: .9;	
+	}	
+	100% {
+		transform: translateY(0px);
+		opacity: 1;	
+		visibility: visible;
+	}
+}
+@-webkit-keyframes grow_bars {
+	0% { 
+		width: 0; 
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes grow_bars {
+	0% { 
+		width: 0; 
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes grow_bars {
+	0% { 
+		width: 0; 
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* RESPONSIVE STYLES */
+@media only screen and (min-width: 769px) and (max-width: 1139px) {
+	.container {
+		width: 960px;
+	}
+	h1 {
+		font-size: 2.23rem;
+	}
+	h2 {
+		font-size: 1.9rem;
+	}
+	h3 {
+		font-size: 1.618rem;
+	}
+	h4 {
+		font-size: 1.174rem;
+	}
+	header {
+		border-right: none !important;
+		border-left: none !important;
+	}
+	header.full, header.small {
+		width: 960px;
+	}
+	header.full {
+		height: 80px;
+	}
+	header.full h3 {
+		margin: 10px 0 0;
+	}
+	header.full h5 {
+		font-size: 1rem;
+	}
+	.timeline-headings {
+		padding-top: 120px;
+	}
+	.jobs-2009-present, .jobs-2000-2008 {
+		width: 555px;
+	}
+	.description {
+		width: 270px;
+	}
+	.company {
+		width: 135px;
+	}
+	.projects {
+		width: 275px;
+	}
+	.skills {
+		width: 90px;
+	}
+	.projects-2010-2014 .timeline-headings, .projects-2008-2009 .project-row, .projects-2006-2007 .project-row, .projects-2004 .project-row, .projects-2001-2004 .project-row {
+		width: 405px;
+	}
+	span.company-descr {
+		font-size: .85rem;
+		width: 140%;
+	}
+	ul.job-descr {
+		font-size: 1rem;
+	}
+	.projects img {
+		max-width: 30%;
+		height: auto;
+		margin: 10px 20px 0 0;
+	}
+	.projects p, .skills li {
+		font-size: .9rem;
+	}
+	.projects-2006-2007 {
+		margin-top: 460px;
+	}
+	.education h4, .certification h4 {
+		font-size: 1.1rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 660px;
+	}
+	header.full, header.small {
+		width: 660px;
+		left: 50px;
+	}
+	.jobs-2009-present, .jobs-2000-2008 {
+		width: 660px;
+		float: none;
+	}
+	.description {
+		width: 340px;
+	}
+	.company {
+		width: 170px;
+	}
+	.projects-2010-2014 .timeline-headings {
+		padding-top: 60px;
+	}
+	.projects-2010-2014 .timeline-headings, .projects-2008-2009 .project-row, .projects-2006-2007 .project-row, .projects-2004 .project-row, .projects-2001-2004 .project-row {
+		width: 640px;
+	}
+	.projects-2008-2009, .projects-2006-2007, .projects-2004, .projects-2001-2004 {
+		margin-top: 0;
+	}
+	.projects {
+		width: 458px;
+	}
+	.skills {
+		width: 142px;
+	}
+	.projects img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 20px 20px 0;
+	}
+	.education, .certification, .aptitudes {
+		width: 50%;
+	}
+	.aptitudes {
+		margin-top: 0;
+	}
+	.education .description, .certification .description, .aptitudes .description {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.container {
+		width: 90%;
+	}
+	h2 {
+		font-size: 1.6rem;
+	}
+	h3 {
+		font-size: 1.365rem;
+	}
+	h4 {
+		font-size: 1.05rem;
+	}
+	header.full, header.small {
+		width: 90%;
+		left: 5%;
+	}
+	header.full {
+		height: 70px;
+	}
+	header h1 {
+		margin-top: 8px;
+	}
+	header h2 {
+		font-size: 1.4rem;
+	}
+	.jobs-2009-present, .jobs-2000-2008 {
+		width: 100%;
+	}
+	.description {
+		width: 48%;
+	}
+	.company {
+		width: 20%;
+		margin-right: 2%;
+	}
+	.company img {
+		max-width: 80%;
+		height: auto;
+	}
+	span.company-descr.long {
+		margin: -5.2em 0 0;
+	}
+	ul.job-descr {
+		width: 120%;
+	}
+	.timeline {
+		width: 28%;
+	}
+	.projects-2010-2014 .timeline-headings, .projects-2008-2009 .project-row, .projects-2006-2007 .project-row, .projects-2004 .project-row, .projects-2001-2004 .project-row {
+		width: 100%;
+	}
+	.projects-2010-2014 .timeline-headings {
+		margin-bottom: 0;
+	}
+	.projects {
+		width: 70%;
+		padding: 0;
+	}
+	.skills {
+		width: 22%;
+	}
+	.education, .certification, .aptitudes {
+		width: 100%;
+	}
+	.education h4, .certification h4 {
+		font-size: 1rem;
+	}
+}
+

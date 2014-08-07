@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	margin: 0;
+	font-family: 'Dosis', Arial, sans-serif;
+}
+h1, h2, h3, h4 {
+	font-weight: 300;
+}
+h1 {
+	/*font-size: 3.63rem;*/
+	font-size: 3.412rem;
+}
+h2 {
+	/*font-size: 2.31rem;*/
+	font-size: 2.511rem;
+}
+h3 {
+	/*font-size: 1.5rem;*/
+	font-size: 1.847rem;
+}
+h4 {
+	/*font-size: 1.05rem;*/
+	font-size: 1.359rem;
+}
+h5 {
+	font-size: 1.166rem;
+}
+a {
+	/*color: #003570;*/
+	color: #222;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto 100px;
+}
+header {
+	padding: 0 0 24px;
+	overflow: auto;
+	border-bottom: 1px solid #aaa;
+	margin: 0 auto 36px;
+	position: fixed;
+	width: 1140px;
+	height: 110px;
+	background: white;
+}
+header .name-title {
+	float: left;
+}
+header .contact-info {
+	float: right;
+	text-align: right;
+}
+header h1 {
+	margin: 10px 0 0;
+	text-transform: uppercase;
+}
+header h2 {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+header h3 {
+	margin: 20px 0 0;
+}
+
+/* TIMELINE HEADINGS */
+.timeline-headings {
+	overflow: auto;
+	padding-top: 160px;
+}
+.timeline-headings h2, .timeline-headings h3 {
+	text-transform: uppercase;
+}
+.timeline-headings h2 {
+	margin-top: .35em;
+}
+.timeline-headings .description, .timeline-headings .company, .timeline-headings .present, .timeline-headings .projects, .timeline-headings .skills {
+	height: 60px;
+}
+.timeline.present {
+	background: url(../images/timeline-BG/timeline-BG-top-arrow.jpg) center bottom no-repeat;
+}
+.timeline.present h4 {
+	text-transform: uppercase;
+}
+
+/* MAIN COLUMNS */
+.description {
+	width: 330px;
+	float: left;
+}
+.company {
+	width: 165px;
+	float: left;
+	text-align: center;
+}
+.timeline {
+	width: 150px;
+	float: left;
+	text-align: center;
+}
+.projects {
+	width: 345px;
+	float: left;
+	padding: 0 20px;
+}
+.projects img {
+	float: left;
+	margin: 0 20px 0 0;
+}
+.project-row {
+	margin: 0 0 1.359em 0;
+	overflow: auto;
+}
+.skills {
+	width: 110px;
+	float: left;
+	text-align: right;
+}
+.skills ul {
+	list-style: none;
+}
+
+/* JOBS AND DESCRIPTIONS */
+.jobs-2009-present, .jobs-2000-2008 {
+	float: left;
+	width: 645px;
+}
+.sustainers div {
+	height: 448px;
+}
+.sustainers .timeline {
+	background:url(../images/timeline-BG/timeline-BG-2013-2014.jpg) center top no-repeat;
+}
+.sustainers .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.sustainers .timeline h4.first {
+	margin-top: 120px;
+}
+.sustainers .description h3, .sustainers .company img {
+	margin-top: 370px;
+}
+.cts div {
+	height: 352px;
+}
+.cts .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2011-2012.jpg) center top no-repeat;
+}
+.cts .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.cts .timeline h4.first {
+	margin-top: 90px;
+}
+.cts .description h3, .cts .company img {
+	margin-top: 255px;
+}
+.helixriver div {
+	height: 460px;
+}
+.helixriver .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2009-2010.jpg) center top no-repeat;
+}
+.helixriver .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.helixriver .timeline h4.first {
+	margin-top: 160px;
+}
+.helixriver .description h3, .helixriver .company img {
+	margin-top: 360px;
+}
+.martorell div {
+	height: 368px;
+}
+.martorell .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2007-2008.jpg) center top no-repeat;
+}
+.martorell .timeline h4 {
+	margin: 180px 0 0 85px;
+}
+.martorell .timeline h4.first {
+	margin-top: 110px;
+}
+.martorell .description h3, .martorell .company img {
+	margin-top: 230px;
+}
+.costa div {
+	height: 225px;
+}
+.costa .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2006.jpg) center top no-repeat;
+}
+.costa .timeline h4 {
+	margin: 160px 0 0 85px;
+}
+.costa .description h3, .costa .company img {
+	margin-top: 130px;
+}
+.u2i div {
+	height: 272px;
+}
+.u2i .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2005.jpg) center top no-repeat;
+}
+.u2i .timeline h4 {
+	margin: 150px 0 0 85px;
+}
+.u2i .description h3, .u2i .company img {
+	margin-top: 200px;
+}
+.thefarcorner div {
+	height: 463px;
+}
+.thefarcorner .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2002-2004.jpg) center top no-repeat;
+}
+.thefarcorner .timeline h4 {
+	margin: 160px 0 0 85px;
+}
+.thefarcorner .timeline h4.first {
+	margin-top: 60px;
+}
+.thefarcorner .description h3, .thefarcorner .company img {
+	margin-top: 370px;
+}
+.argonauts div {
+	height: 454px;
+}
+.argonauts .timeline {
+	background: url(../images/timeline-BG/timeline-BG-2000-2001.jpg) center top no-repeat;
+}
+.argonauts .timeline h4 {
+	margin: 160px 0 0 85px;
+}
+/*.argonauts .timeline h4.first {
+	margin-top: 60px;
+}*/
+.argonauts .description h3, .argonauts .company img {
+	margin-top: 110px;
+}
+
+/* PROJECTS */
+.projects-2013-2014 {
+	margin: 36px 0 0 0;
+}
+
+/* GENERAL STYLES */
+.clearfloat {
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+}
